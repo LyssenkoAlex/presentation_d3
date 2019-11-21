@@ -29,7 +29,7 @@
          data-file="d3-fig/collision-detection.html" style="overflow: visible">
     <h3>What is D3.js</h3>
 
-    <p style="position: absolute; left: 100px; top: 350px">
+    <p style="position: absolute; left: 100px; top: 400px">
         D3.js is a JavaScript library for manipulating documents based on data.
         D3 helps you bring data to life using HTML, SVG, and CSS.
         D3 emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework,
@@ -40,25 +40,24 @@
 
 <section class="fig-container"
          data-file="d3-fig/collision-detection.html" data-no-background>
-    <h3>Embed interactive D3 visualizations</h3>
-    <div class='fancy-border' style="position: absolute; width:80%; left: 100px; top: 250px; color: #FF5733">
-        Add the "data-no-background" attribute to limit the background to the slide area
-    </div>
-    <p style="position: absolute; left: 100px; top: 550px">
-        (press right/left arrows to trigger visualization transitions)
+    <h3>Introduction</h3>
+
+    <p style="position: absolute; left: 100px; top: 400px">
+        D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document.
+        For example, you can use D3 to generate an HTML table from an array of numbers.
+        D3 solves the crux of the problem: efficient manipulation of documents based on data.
+        D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation.
     </p>
-    <p style="position: absolute; left: 100px; top: 600px">
-        Visualization adapted from <a href='https://bl.ocks.org/mbostock/3231298' target='_blank'>Collision detection</a> by Mike Bostock</p>
+
 </section>
 
 <section>
-    <h3>Multi-visualizations are supported</h3>
+    <h3>Selections</h3>
     <div class="row no-margin-top">
-        <div class="col-50 no-margin-top">
-            <p class="no-margin-top small">
-            <a href='https://bl.ocks.org/olearym/ec27b9ac1bf0da42ed8a0d533181693b' target='_blank'>Gooey effect - Hexagon</a> by Nadieh Bremer</p>
-            <div class="fig-container no-margin-top" data-file="d3-fig/gooey.html"></div>
-        </div>
+        <p style="position: absolute; left: 100px; top: 400px">
+           D3 employs a declarative approach, operating on arbitrary sets of nodes called selections. For example, you can rewrite the above loop as:
+           d3.selectAll("p").style("color", "blue");
+       </p>
         <div class="col-50 no-margin-top">
             <p class="no-margin-top small">
             <a href='https://bl.ocks.org/olearym/ec27b9ac1bf0da42ed8a0d533181693b' target='_blank'>Modular Multiplication Circle</a> by Megan O'Leary</p>
@@ -67,7 +66,7 @@
 </section>
 
 <section>
-    <h3>Compatible with Reveal.js's lazy loading</h3>
+    <h3>Enter and Exit</h3>
     <div class="row no-margin-top">
         <div class="col-50 no-margin-top">
             <p class="no-margin-top small"> Not preloaded </p>
@@ -80,7 +79,7 @@
 </section>
 
 <section>
-    <h3>Independent transitions</h3>
+    <h3>Some great Examples</h3>
     <div class="row no-margin-top">
         <div class="col-50 no-margin-top">
             <p class="no-margin-top small">
